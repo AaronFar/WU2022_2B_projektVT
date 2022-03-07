@@ -11,10 +11,10 @@
 <div id="wrapper_besok_oss">
     <nav>
         <ul class="nav-links">
-            <li><a href="index.html" class="unfocused_anchor"><h1>Hem</h1></a></li>
-            <li><a href="besok_oss.html" id="focused_anchor"><h1>Besök oss</h1></a></li>
-            <li><a href="store.html" class="unfocused_anchor"><h1>Store</h1></a></li>
-            <li><a href="om_oss.html" class="unfocused_anchor"><h1>Om oss</h1></a></li>
+            <li><a href="index.html" class="unfocused_anchor"><h2 class="menu_titles">Hem</h1></a></li>
+            <li><a href="besok_oss.html" id="focused_anchor"><h1 class="menu_titles">Besök oss</h1></a></li>
+            <li><a href="store.html" class="unfocused_anchor"><h2 class="menu_titles">Store</h1></a></li>
+            <li><a href="om_oss.html" class="unfocused_anchor"><h2 class="menu_titles">Om oss</h1></a></li>
         </ul>
         <div class="burger">
             <div id="line1"></div>
@@ -23,34 +23,40 @@
         </div>
     </nav>
 
-    <header><img src="" alt="North Salon" id="logo"></header>
+    <header><img src="misc/Hemsidans logga (v3).png" alt="North Salon" id="logo"></header>
+
+
+    <nav id="nav_desktop">
+        <a href="index.html" class="unfocused_anchor_desktop"><h1 class="nav_titles">Hem</h1></a>
+        <a href="besok_oss.html" id="focused_anchor_desktop"><h2 class="nav_titles">Besök oss</h1></a>
+        <img src="misc/Hemsidans logga (v3).png" alt="North Salon" id="logo_desktop">
+        <a href="store.html" class="unfocused_anchor_desktop"><h2 class="nav_titles">Store</h1></a>
+        <a href="om_oss.html" class="unfocused_anchor_desktop"><h2 class="nav_titles">Om oss</h1></a>
+    </nav>
     
     <article id="information">
-        <div class="information_box">
-            <h2>Öppettider</h2>
-            <p class="information_text">Måndag ........................................................................................</p>
-            <p class="information_text">Tisdag .........................................................................................</p>
-            <p class="information_text">Onsdag ........................................................................................</p>
-            <p class="information_text">Torsdag .......................................................................................</p>
-            <p class="information_text">Fredag ........................................................................................</p>
-            <p class="information_text">Lördag ........................................................................................</p>
-            <p class="information_text">Söndag ........................................................................................</p>
-        </div>
+            <h2 id="information_title">Öppettider</h2>
+            <p class="information_text">Måndag . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+            <p class="information_text">Tisdag . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+            <p class="information_text">Onsdag . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+            <p class="information_text">Torsdag . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+            <p class="information_text">Fredag . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+            <p class="information_text">Lördag . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+            <p class="information_text">Söndag . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
         <!-- lägg till tider? -->
-
-        <div class="information_box">
-            <h2>Adress</h2>
-            <p class="information_text">Origovägen 4, 412 58 Göteborg</p>
-        </div>
     </article>
 
-    <aside>
+    <div id="address">
+        <p id="address_text">Adress: Origovägen 4, 412 58 Göteborg</p>
+    </div>
+
+    <aside id="image_besok_oss_desktop">
         <img src="" alt="Bild på..."> 
         <!-- Denna bilden ska bara visas i desktop layout -->
     </aside>
 
     <article id="directions">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1268.0097344275684!2d11.974071090032513!3d57.69047335032419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff30cadd946df%3A0x39654b05d8cc5f4a!2sOrigov%C3%A4gen%204%2C%20412%2058%20G%C3%B6teborg!5e0!3m2!1ssv!2sse!4v1644568182433!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1268.0097344275684!2d11.974071090032513!3d57.69047335032419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff30cadd946df%3A0x39654b05d8cc5f4a!2sOrigov%C3%A4gen%204%2C%20412%2058%20G%C3%B6teborg!5e0!3m2!1ssv!2sse!4v1644568182433!5m2!1ssv!2sse" allowfullscreen="" loading="lazy" id="directions_map"></iframe>
     </article>
 
     <footer>

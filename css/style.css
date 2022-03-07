@@ -126,8 +126,9 @@ header {
     background-color: #b9905e;
     padding: 20px;
     margin: 10px;
-    padding-bottom: 30px;
     width: 550px;
+    padding-bottom: 25px;
+    padding-top: 15px;
 }
 
 .offer_title {
@@ -185,6 +186,72 @@ footer {
     display: none;
 }
 
+#wrapper_besok_oss {
+    display: grid;
+    grid-template-columns: 100px minmax(300px, 1fr);
+    grid-template-rows: 1fr 3fr 1fr 4fr 1fr;
+    grid-template-areas: 
+    "nav log"
+    "inf inf"
+    "adr adr"
+    "map map"
+    "foo foo";
+    background-color: #EED6C4;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+#image_besok_oss_desktop {
+    display: none;
+}
+
+#information {
+    grid-area: inf;
+    margin: 20px;
+
+    border-radius: 15px 50px;
+    border: 2px solid #6B4F4F;
+    background-color: #b9905e;
+    padding: 20px;
+    padding-bottom: 25px;
+    padding-top: 15px;
+}
+
+#information_title {
+    background-color: #b9905e;
+}
+
+.information_text {
+    background-color: #b9905e;
+    padding-left: 1fr;
+    padding-right: 1fr;
+}
+
+#address {
+    grid-area: adr;
+    margin-left: 25px;
+    margin-right: 20px;
+}
+
+#address_text {
+
+}
+
+
+#directions {
+    grid-area: map;
+    margin: 20px;
+    margin-top: 5px;
+}
+
+#directions_map {
+    width: 100vw;
+    height: 450px;
+    border-radius: 15px;
+    border: 1.5px solid #6B4F4F;
+}
+
 @media screen and (min-width: 800px) {
     .burger {
         display: none;
@@ -210,6 +277,8 @@ footer {
 
     #logo_desktop {
         width: 100px;
+        background-color: #6B4F4F;
+
     }
 
     .nav-links {
@@ -221,6 +290,10 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        background-color: #6B4F4F;
+    }
+
+    .nav_titles {
         background-color: #6B4F4F;
     }
 
@@ -286,7 +359,68 @@ footer {
 
     #image_home {
         display: unset;
+        grid-area: im;       
+    }
+
+    #wrapper_besok_oss {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 3fr 1fr 4fr 1fr;
+        grid-template-areas: 
+        "na na"
+        "in im"
+        "ad ad"
+        "ma ma"
+        "fo fo";
+        background-color: #EED6C4;
+    
+        height: 100vh;
+        width: 100vw;
+    }
+
+    #image_besok_oss_desktop {
+        display: unset;
         grid-area: im;
     }
 
+    #information {
+        grid-area: in;
+        margin: 60px;
+    
+        border-radius: 15px 100px 100px 15px;
+        border: 2px solid #6B4F4F;
+        background-color: #b9905e;
+        padding: 20px;
+        padding-bottom: 25px;
+        padding-top: 15px;
+    }
+    
+    #information_title {
+        background-color: #b9905e;
+        margin-right: 25px;
+    }
+    
+    .information_text {
+        background-color: #b9905e;
+        margin-right: 15px;
+    }
+    
+    #address {
+        grid-area: ad;
+        margin-left: 65px;
+        margin-right: 20px;
+    }
+
+    #directions {
+        grid-area: ma;
+        margin: 60px;
+        margin-top: 5px;
+    }
+    
+    #directions_map {
+        width: 100vw;
+        height: 500px;
+        border-radius: 15px;
+        border: 1.5px solid #6B4F4F;
+    }
+    
 }
