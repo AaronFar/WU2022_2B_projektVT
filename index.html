@@ -11,10 +11,10 @@
 <div id="wrapper_home">
     <nav>
         <ul class="nav-links">
-            <li><a href="index.html" id="focused_anchor"><h1>Hem</h1></a></li>
-            <li><a href="besok_oss.html" class="unfocused_anchor"><h1>Besök oss</h1></a></li>
-            <li><a href="store.html" class="unfocused_anchor"><h1>Store</h1></a></li>
-            <li><a href="om_oss.html" class="unfocused_anchor"><h1>Om oss</h1></a></li>
+            <li><a href="index.html" class="focused_anchor"><h1 class="menu_titles">Hem</h1></a></li>
+            <li><a href="besok_oss.html" class="unfocused_anchor"><h1 class="menu_titles">Besök oss</h1></a></li>
+            <li><a href="store.html" class="unfocused_anchor"><h1 class="menu_titles">Store</h1></a></li>
+            <li><a href="om_oss.html" class="unfocused_anchor"><h1 class="menu_titles">Om oss</h1></a></li>
         </ul>
         <div class="burger">
             <div id="line1"></div>
@@ -24,6 +24,16 @@
     </nav>
 
     <header><img src="misc/Hemsidans logga (v3).png" alt="North Salon" id="logo"></header>
+
+
+    <nav id="nav_desktop">
+        <a href="index.html" id="focused_anchor_desktop"><h1 class="nav_titles">Hem</h1></a>
+        <a href="besok_oss.html" class="unfocused_anchor_desktop"><h1 class="nav_titles">Besök oss</h1></a>
+        <img src="misc/Hemsidans logga (v3).png" alt="North Salon" id="logo_desktop">
+        <a href="store.html" class="unfocused_anchor_desktop"><h1 class="nav_titles">Store</h1></a>
+        <a href="om_oss.html" class="unfocused_anchor_desktop"><h1 class="nav_titles">Om oss</h1></a>
+    </nav>
+    <!-- class för varjee h1 -->
 
     <article id="offers">
         <div class="offer_box">
@@ -48,21 +58,21 @@
     </article>
 
     <article id="services">
-            <h2>Tjänster</h2>
-            <h3>Barn</h3>
-            <p class="service_text">Vanlig klippning ........................................... 70 kr</p>
-            <p class="service_text">Klippning + tvätt ........................................... 80 kr</p>
-            <h3>Vuxna</h3>
-            <p class="service_text">Vanlig klippning ........................................... 120 kr</p>
-            <p class="service_text">Klippning + tvätt ........................................... 135 kr</p>
-            <p class="service_text">Mer ........................................... 85 kr</p>
-            <p class="service_text">Mer ........................................... 85 kr</p>
+            <h2 id="service_top_title">Tjänster</h2>
+            <h3 class="service_title">Barn</h3>
+            <p class="service_text">• Vanlig klippning ............................................ 70 kr</p>
+            <p class="service_text">• Klippning + tvätt ........................................... 80 kr</p>
+            <h3 class="service_title">Vuxna</h3>
+            <p class="service_text">• Vanlig klippning ............................................ 120 kr</p>
+            <p class="service_text">• Klippning + tvätt ........................................... 130 kr</p>
+            <p class="service_text">• Klippning + skägg ......................................... 140 kr</p>
+            <p class="service_text">• Klippning + skägg + tvätt .............................. 150 kr</p>
+            <p class="service_text">• Hårfärgning ....................................................... - kr</p>
     </article>
 
-    <!-- <aside> (aside är fel?)
-        <img src="" alt="Bild på...">  -->
-        <!-- Eventuellt någon bild som bara visas i desktop layout (vid sidan om tjänster) -->
-    <!-- </aside> -->
+    <aside id="image_home"> 
+        <img src="" alt="Bild på..."> 
+    </aside>
 
     <footer>
         <p class="footer_text">© 2022 - North Salon</p>
