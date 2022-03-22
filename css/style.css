@@ -8,7 +8,7 @@
 
 #wrapper_home {
     display: grid;
-    grid-template-columns: 100px minmax(300px, 1fr);
+    grid-template-columns: 100px minmax(260px, 1fr);
     grid-template-rows: 1fr 5fr 5fr 1fr;
     grid-template-areas: 
     "nav log"
@@ -188,7 +188,7 @@ footer {
 
 #wrapper_besok_oss {
     display: grid;
-    grid-template-columns: 100px minmax(300px, 1fr);
+    grid-template-columns: 100px minmax(260px, 1fr);
     grid-template-rows: 1fr 3fr 1fr 4fr 1fr;
     grid-template-areas: 
     "nav log"
@@ -254,7 +254,7 @@ footer {
 
 #wrapper_store {
     display: grid;
-    grid-template-columns: 100px minmax(300px, 1fr);
+    grid-template-columns: 100px minmax(260px, 1fr);
     grid-template-rows: 1fr 6fr 1fr 1fr;
     grid-template-areas: 
     "nav log"
@@ -342,6 +342,61 @@ footer {
     margin-left: 20px;
 }
 
+#wrapper_om_oss {
+    display: grid;
+    grid-template-columns: 100px minmax(260px, 1fr);
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-areas: 
+    "nav log"
+    "con con"
+    "foo foo";
+    background-color: #EED6C4;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+#wrapper_content_om_oss {
+    grid-area: con;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 3fr 1fr;
+    grid-template-areas: 
+    "hai im1"
+    "im2 his"
+    "pro pro";
+
+    height: 100vh;
+    width: 100vw;
+}
+
+#hairdressers {
+    grid-area: hai;
+}
+
+.titles_om_oss {
+
+}
+
+.text_om_oss {
+
+}
+
+#hairdressers_image {
+    grid-area: im1;
+}
+
+#history_image {
+    grid-area: im2;
+}
+
+#history {
+    grid-area: his;
+}
+
+#products {
+    grid-area: pro;
+}
 
 
 @media screen and (min-width: 800px) {
@@ -589,5 +644,53 @@ footer {
 
     #section_2 {
         grid-area: s2;
+    }
+
+    #wrapper_om_oss {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 6fr 1fr;
+        grid-template-areas: 
+        "na"
+        "co"
+        "fo";
+    }
+
+    #wrapper_content_om_oss {
+        grid-area: co;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3fr 3fr 1fr;
+        grid-template-areas: 
+        "ha i1"
+        "i2 hi"
+        "pr pr";
+    }
+
+    #hairdressers {
+        grid-area: ha;
+    }
+    
+    .titles_om_oss {
+    
+    }
+    
+    .text_om_oss {
+    
+    }
+    
+    #hairdressers_image {
+        grid-area: i1;
+    }
+    
+    #history_image {
+        grid-area: i2;
+    }
+    
+    #history {
+        grid-area: hi;
+    }
+    
+    #products {
+        grid-area: pr;
     }
 }
