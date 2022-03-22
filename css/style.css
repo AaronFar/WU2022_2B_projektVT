@@ -283,6 +283,10 @@ footer {
     background-color: #6B4F4F;
 }
 
+.products_images {
+    
+}
+
 #item_1 {
     grid-area: it1;
     padding: 1px;
@@ -584,8 +588,12 @@ footer {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-auto-rows: 1fr 1fr;
         grid-template-areas: 
-        "i1 i2 i3 i4 i5"
-        "i6 i7 i8 i9 i9";
+        /* "i1 i2 i3 i4 i5"
+        "i6 i7 i8 i9 i9"; */
+        "i1 i1 i2 i3 i4"
+        "i5 i6 i7 i8 i9";
+        /* "i1 i2 i3 i3 i4"
+        "i5 i6 i7 i8 i9"; */
     }
     
     #item_1 {
