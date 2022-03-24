@@ -363,19 +363,21 @@ footer {
 #wrapper_content_om_oss {
     grid-area: con;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3fr 3fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.5fr;
     grid-template-areas: 
-    "hai im1"
-    "im2 his"
-    "pro pro";
-
-    height: 100vh;
-    width: 100vw;
+    "hai"
+    "im1"
+    "his"
+    "im2"
+    "pro";
+    max-width: fit-content;
+    margin: 20px;
 }
 
 #hairdressers {
     grid-area: hai;
+    margin-bottom: 10px;
 }
 
 .titles_om_oss {
@@ -388,14 +390,20 @@ footer {
 
 #hairdressers_image {
     grid-area: im1;
+    width: 300px;
+    margin-top: 0px;
 }
 
 #history_image {
     grid-area: im2;
+    width: 300px;
+    margin-bottom: 40px;
+    margin-top: 0px;
 }
 
 #history {
     grid-area: his;
+    margin-bottom: 10px;
 }
 
 #products {
@@ -672,10 +680,12 @@ footer {
         "ha i1"
         "i2 hi"
         "pr pr";
+        margin: 40px;
     }
 
     #hairdressers {
         grid-area: ha;
+        margin-right: 10px;
     }
     
     .titles_om_oss {
@@ -688,10 +698,13 @@ footer {
     
     #hairdressers_image {
         grid-area: i1;
+        width: 500px;
+        margin-left: 10px;
     }
     
     #history_image {
         grid-area: i2;
+        width: 500px;
     }
     
     #history {
