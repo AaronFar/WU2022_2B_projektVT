@@ -104,6 +104,7 @@ header {
 #logo {
     width: 100px;
     background-color: #6B4F4F;
+    margin-left: -100px;
 }
 
 #nav_desktop {
@@ -364,7 +365,7 @@ footer {
     grid-area: con;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.5fr;
+    grid-template-rows: 0.6fr 0.6fr 1fr 0.5fr 0.5fr;
     grid-template-areas: 
     "hai"
     "im1"
@@ -377,7 +378,6 @@ footer {
 
 #hairdressers {
     grid-area: hai;
-    margin-bottom: 10px;
 }
 
 .titles_om_oss {
@@ -385,13 +385,14 @@ footer {
 }
 
 .text_om_oss {
-
+    margin-bottom: 15px;
 }
 
 #hairdressers_image {
     grid-area: im1;
     width: 300px;
     margin-top: 0px;
+    border-radius: 7px;
 }
 
 #history_image {
@@ -410,6 +411,9 @@ footer {
     grid-area: pro;
 }
 
+.images_styling {
+    border-radius: 7px;
+}
 
 @media screen and (min-width: 800px) {
     .burger {
@@ -437,7 +441,6 @@ footer {
     #logo_desktop {
         width: 100px;
         background-color: #6B4F4F;
-
     }
 
     .nav-links {
@@ -513,12 +516,11 @@ footer {
         cursor: pointer;
         text-decoration: underline;
         background-color: #6B4F4F;
-
     }
 
     #image_home {
         display: unset;
-        grid-area: im;       
+        grid-area: im;
     }
 
     #wrapper_besok_oss {
@@ -713,5 +715,13 @@ footer {
     
     #products {
         grid-area: pr;
+    }
+
+    .images_styling {
+        transition: transform .2s;
+    }
+    
+    .images_styling:hover {
+        transform: scale(1.05);
     }
 }
