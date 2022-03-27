@@ -135,6 +135,8 @@ header {
 .offer_title {
     line-height: 150%;
     background-color: #b9905e;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
 }
 
 .offer_text {
@@ -142,6 +144,7 @@ header {
     line-height: 100%;
     width: 550px;
     background-color: #b9905e;
+    font-family: 'Playfair Display', serif;
 }
 
 #services {
@@ -149,19 +152,31 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-left: 40px;
+    border: 4px double black;
+    border-radius: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background-color: #e0c5a4;
 }
 
 #service_top_title {
     align-self: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    background-color: #e0c5a4;
 }
 
 .service_title {
     margin-left: 20px;
+    font-family: 'Playfair Display', serif;
+    background-color: #e0c5a4;
 }
 
 .service_text {
     margin-left: 30px;
+    font-family: 'Playfair Display', serif;
+    background-color: #e0c5a4;
 }
 
 footer {
@@ -495,10 +510,17 @@ footer {
 
     .offer_box {
         border-radius: 25px;
+        transition: transform .2s;
+    }
+
+    .offer_box:hover {
+        transform: scale(1.05);
     }
 
     #services {
         grid-area: se;
+        margin-left: 50px;
+        margin-right: 40px;
     }
 
     footer {
@@ -521,6 +543,8 @@ footer {
     #image_home {
         display: unset;
         grid-area: im;
+        margin-bottom: 30px;
+        margin-right: 50px;
     }
 
     #wrapper_besok_oss {
