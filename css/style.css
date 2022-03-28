@@ -158,6 +158,7 @@ header {
     margin-right: 30px;
     margin-bottom: 30px;
     background-color: #e0c5a4;
+    padding-bottom: 20px;
 }
 
 #service_top_title {
@@ -191,7 +192,6 @@ footer {
 .footer_text {
     margin-right: 55px;
     background-color: #6B4F4F;
-
 }
 
 .footer_text2, .footer_text2:hover {
@@ -241,8 +241,6 @@ footer {
 
 .information_text {
     background-color: #b9905e;
-    padding-left: 1fr;
-    padding-right: 1fr;
     font-family: 'Playfair Display', serif;
 }
 
@@ -305,6 +303,14 @@ footer {
 
 .products_images {
     border-radius: 0px 0px 7px 7px;
+}
+
+.item_title {
+    font-family: 'Playfair Display', serif;
+}
+
+.item_description {
+    font-family: 'Playfair Display', serif;
 }
 
 #item_1 {
@@ -400,11 +406,12 @@ footer {
 }
 
 .titles_om_oss {
-
+    font-family: 'Playfair Display', serif;
 }
 
 .text_om_oss {
     margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
 }
 
 #hairdressers_image {
@@ -715,15 +722,7 @@ footer {
         grid-area: ha;
         margin-right: 10px;
     }
-    
-    .titles_om_oss {
-    
-    }
-    
-    .text_om_oss {
-    
-    }
-    
+
     #hairdressers_image {
         grid-area: i1;
         width: 500px;
