@@ -278,7 +278,6 @@ footer {
     "se2 se2"
     "foo foo";
     background-color: #EED6C4;
-
     height: 100vh;
     width: 100vw;
 }
@@ -307,64 +306,75 @@ footer {
 
 .item_title {
     font-family: 'Playfair Display', serif;
+    background-color: rgb(189, 139, 101);
 }
 
 .item_description {
     font-family: 'Playfair Display', serif;
+    background-color: rgb(189, 139, 101);
 }
 
 #item_1 {
     grid-area: it1;
     padding: 1px;
     border-radius: 2px;
+    background-color: rgb(189, 139, 101);
 }
 
 #item_2 {
     grid-area: it2;
     padding: 1px;
     border-radius: 2px;
+    background-color: rgb(189, 139, 101);
 }
 
 #item_3 {
     grid-area: it3;
     padding: 1px;
     border-radius: 2px;
+    background-color: rgb(189, 139, 101);
 }
 
 #item_4 {
     grid-area: it4;
     padding: 1px;
     border-radius: 2px;
+    background-color: rgb(189, 139, 101);
 }
 
 #item_5 {
     grid-area: it5;
     padding: 1px;
     border-radius: 2px;
+    background-color: rgb(189, 139, 101);
 }
 
 #item_6 {
     grid-area: it6;
     padding: 1px;
     border-radius: 2px;
+    background-color: rgb(189, 139, 101);
 }
 
 #item_7 {
     grid-area: it7;
     padding: 1px;
     border-radius: 2px;
+    background-color: rgb(189, 139, 101);
 }
 
 #item_8 {
     grid-area: it8;
     padding: 1px;
     border-radius: 2px;
+    background-color: rgb(189, 139, 101);
 }
 
 #item_9 {
     grid-area: it9;
     padding: 1px;
     border-radius: 2px;
+    background-color: rgb(189, 139, 101);
 }
 
 #section_2 {
@@ -500,10 +510,13 @@ footer {
         text-decoration: none;
         font-weight: bold;
         text-decoration: underline;
+        transform: scale(1.1);
+
     }
     
     #focused_anchor_desktop:hover, #focused_anchor_desktop:active{
         color: rgb(68, 49, 32);
+
     }
 
     .nav-links {
