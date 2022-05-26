@@ -9,9 +9,10 @@
 #wrapper_home {
     display: grid;
     grid-template-columns: 100px minmax(260px, 1fr);
-    grid-template-rows: 1fr 5fr 5fr 1fr;
+    grid-template-rows: 1fr 0.5 5fr 5fr 1fr;
     grid-template-areas: 
     "nav log"
+    "tit tit"
     "off off"
     "ser ser"
     "foo foo";
@@ -83,6 +84,7 @@ nav {
 }
 
 .menu_titles {
+    font-size: 1.4em;
     background-color: #6B4F4F;
 }
 
@@ -99,6 +101,10 @@ header {
     justify-content: center;
     padding: 8px;
     
+}
+
+h1 {
+    background-color: #6B4F4F;
 }
 
 #logo {
@@ -159,25 +165,38 @@ header {
     margin-bottom: 30px;
     background-color: #e0c5a4;
     padding-bottom: 20px;
+    transition: transform .2s;
+}
+
+#services:hover {
+    transform: scale(1.05);
 }
 
 #service_top_title {
-    align-self: center;
     font-family: 'Playfair Display', serif;
     font-weight: bold;
+    background-color: #EED6C4;
     background-color: #e0c5a4;
+    border-radius: 15px;
+    padding: 3px;
+    margin-left: 10px;
 }
 
 .service_title {
-    margin-left: 20px;
+    margin-right: 350px;
     font-family: 'Playfair Display', serif;
     background-color: #e0c5a4;
+    align-self: center;
 }
 
 .service_text {
-    margin-left: 30px;
+    margin-right: 20px;
     font-family: 'Playfair Display', serif;
     background-color: #e0c5a4;
+    align-self: center;
+    border-radius: 15px;
+    padding: 3px;
+    background-color: #EED6C4;
 }
 
 footer {
@@ -205,9 +224,10 @@ footer {
 #wrapper_besok_oss {
     display: grid;
     grid-template-columns: 100px minmax(260px, 1fr);
-    grid-template-rows: 1fr 3fr 1fr 4fr 1fr;
+    grid-template-rows: 1fr 0.5fr 3fr 1fr 4fr 1fr;
     grid-template-areas: 
     "nav log"
+    "tit tit"
     "inf inf"
     "adr adr"
     "map map"
@@ -220,6 +240,12 @@ footer {
 
 #image_besok_oss_desktop {
     display: none;
+}
+
+#page_title_mobile {
+    grid-area: tit;
+    background-color: #6B4F4F;
+    color: #EED6C4;
 }
 
 #information {
@@ -271,9 +297,10 @@ footer {
 #wrapper_store {
     display: grid;
     grid-template-columns: 100px minmax(260px, 1fr);
-    grid-template-rows: 1fr 6fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 6fr 1fr 1fr;
     grid-template-areas: 
     "nav log"
+    "tit tit"
     "se1 se1"
     "se2 se2"
     "foo foo";
@@ -394,9 +421,10 @@ footer {
 #wrapper_om_oss {
     display: grid;
     grid-template-columns: 100px minmax(260px, 1fr);
-    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-rows: 1fr 0.5fr 6fr 1fr;
     grid-template-areas: 
     "nav log"
+    "tit tit"
     "con con"
     "foo foo";
     background-color: #EED6C4;
@@ -501,6 +529,7 @@ footer {
     }
 
     .nav_titles {
+        font-size: 1.7em;
         background-color: #6B4F4F;
     }
 
@@ -582,7 +611,7 @@ footer {
 
     #wrapper_besok_oss {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 3fr 1fr 4fr 1fr;
+        grid-template-rows: 1fr 0.5fr 3fr 1fr 4fr 1fr;
         grid-template-areas: 
         "na na"
         "in im"
@@ -602,6 +631,11 @@ footer {
         margin: 60px;
         margin-left: +100px;
     }
+
+    #page_title_mobile {
+        display: none;
+    }
+    
 
     #information {
         grid-area: in;
